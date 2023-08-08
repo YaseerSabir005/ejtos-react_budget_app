@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 const Budget = () => {
+
         const submitEvent = () => {
         if(cost > 20000) {
         alert("The value cannot exceed 20000");
@@ -17,7 +18,7 @@ const Budget = () => {
         const [cost, setCost] = useState("");
         return (
         <div className='alert alert-secondary'>
-        Budget: £
+        Budget: $
         <input
         type="number"
         id ='cost'
